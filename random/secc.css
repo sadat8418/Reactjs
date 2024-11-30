@@ -1,0 +1,25 @@
+/* Container for centering and layout */
+.image-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f4f4f9; /* Soft background */
+  }
+  
+  /* Sexy image styles */
+  .sexy-image {
+    width: 300px;
+    height: 200px;
+    border-radius: 15px; /* Rounded corners */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2), 0 6px 6px rgba(0, 0, 0, 0.15); /* Elegant shadow */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth animation */
+  }
+  
+  /* Hover effect */
+  .sexy-image:hover {
+    transform: scale(1.05); /* Slightly zoom in */
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3), 0 10px 10px rgba(0, 0, 0, 0.2); /* Enhance shadow */
+    cursor: pointer; /* Pointer cursor on hover */
+  }
+  

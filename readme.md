@@ -24,6 +24,19 @@ eject : eituku kaj cilo ract er .. baki ta kore nibo ...
 
 lint : error, red line dekhay 
 
-
+#   Vite
 2. npm create vite@latest
-3. npm install
+3. npm i
+
+#   Tailwind
+npm install -D tailwindcss postcss autoprefixer
+npx tailwindcss init -p
+tailwind.config.js
+ content: [
+    "./index.html",
+    "./src/**/*.{js,ts,jsx,tsx}",
+  ],
+index.css
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
