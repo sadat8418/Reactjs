@@ -31,12 +31,12 @@ lint : error, red line dekhay
 #   Tailwind
 npm install -D tailwindcss postcss autoprefixer
 npx tailwindcss init -p
-tailwind.config.js
+# 1 tailwind.config.js
  content: [
     "./index.html",
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
-index.css
+# 2 index.css
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
