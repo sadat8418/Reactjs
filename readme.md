@@ -40,3 +40,6 @@ npx tailwindcss init -p
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+rfce    // import react , function
+npm i react-router-dom
