@@ -36,10 +36,23 @@ npx tailwindcss init -p
     "./index.html",
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
-# 2 index.css
+# 2 src/ index.css
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 rfce    // import react , function
 npm i react-router-dom
+
+
+keys na likhle performance degrade hoye jay 
+classbased .. redux , but react sob funtional based ... 
+
+flux -- state management 
+redux (library) --- you should never modify your state ,
+          changes should be made through pure functions (reducers)
+          so that anyone canot change it ..
+         
+      redux- toolkit  (onek kisu preinstalled)
+
+      reducer , useSelector , useDispatch (to send)

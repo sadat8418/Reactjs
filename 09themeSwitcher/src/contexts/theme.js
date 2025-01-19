@@ -1,8 +1,8 @@
 import { createContext, useContext } from "react";
 
 export const ThemeContext = createContext({
-    themeMode: "light",
-    darkTheme: () => {},
+    themeMode: "light",     //string expect korteci, light
+    darkTheme: () => {},   //function(only name likhci) er vitore functionality nai, App.jsx e likhci ..(rules of context api)
     lightTheme: () => {},
 })
 
