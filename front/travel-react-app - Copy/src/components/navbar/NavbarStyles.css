@@ -6,8 +6,7 @@
     align-items: center;
     padding: 0 1rem;
     z-index: 2;
-    /* video er upor navbar jabe, absolute dile */
-    position: absolute; 
+    position: absolute;
     color: #fff;
 }
 
@@ -44,8 +43,8 @@ li {
         display: flex;
         flex-direction: column;
         width: 100%;
-        top: -100vh;
-        /* top: 80px; */
+        /* top: -100vh; */
+        top: 80px;
         left: 0;
         position: absolute;
         justify-content: space-between;
