@@ -7,7 +7,7 @@
     height: 90vh;
     object-fit: cover;
 }
-
+/* by inspect, it is found that corsul has this extram element called .thumbs-wrapper  */
 .thumbs-wrapper, .carousel-status {
     display: none;
 }

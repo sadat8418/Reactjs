@@ -1,5 +1,15 @@
 # Getting Started with Create React App
 
+navbar
+hero
+destinations
+search
+selects
+carousel
+footer
+
+
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
