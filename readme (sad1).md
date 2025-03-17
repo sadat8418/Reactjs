@@ -5,6 +5,10 @@ git branch -M main
 git remote add origin https://github.com/sadat8418/Reactjs.git
 git push -u origin main
 
+force push : 
+git push -f -u origin main
+
+
 300Mbps
 1. npx create-react-app 01basicReact
 npx ..needa loto time
