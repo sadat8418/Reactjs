@@ -12,7 +12,7 @@ import './NavbarStyles.css'
 
 function Navbar() {
     const [nav, setNav] = useState(false)
-    const handleNav = () => setNav(!nav)
+    const handleNav = () => setNav(!nav) //click korle dropdown 
 
     return (
         //nav true, taile navbar-bg (white font), naile navbar

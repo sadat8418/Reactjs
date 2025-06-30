@@ -9,9 +9,8 @@ force push :
 git push -f -u origin main
 
 
-300Mbps
 1. npx create-react-app 01basicReact
-npx ..needa loto time
+npx .. # needa loto time x   
 
 react dom 
 ract native
@@ -25,8 +24,7 @@ start :dev env te
 build : production
 test
 eject : eituku kaj cilo ract er .. baki ta kore nibo ...
-
-lint : error, red line dekhay 
+lint : error/ red line dekhay VS code a .. oitai lint 
 
 #   Vite
 2. npm create vite@latest
@@ -40,6 +38,7 @@ npx tailwindcss init -p
     "./index.html",
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
+
 # 2 src/ index.css
 @tailwind base;
 @tailwind components;

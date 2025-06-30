@@ -4,10 +4,10 @@ import { useLoaderData } from 'react-router-dom'
 //loader manei hover er sathe sathe fetching start
 
 function Github() {
-    const data = useLoaderData()
+    const data = useLoaderData() //hook for loader
     // const [data, setData] = useState([])
     // useEffect(() => {
-    //  fetch('https://api.github.com/users/hiteshchoudhary')
+    //  fetch('https://api.github.com/users/sadat8418')
     //  .then(response => response.json())
     //  .then(data => {
     //     console.log(data);
@@ -16,7 +16,10 @@ function Github() {
     // }, [])
     
   return (
-    <div className='text-center m-4 bg-gray-600 text-white p-4 text-3xl'>Github followers: {data.followers}
+    <div className='text-center m-4 bg-gray-300 text-black p-4 text-3xl'>Github repos : {data.public_repos}
+    <br></br>
+   {data. html_url} 
+
     <img src={data.avatar_url} alt="Git picture" width={300} />
     </div>
   )
@@ -25,6 +28,6 @@ function Github() {
 export default Github
 
 export const githubInfoLoader = async () => {
-    const response = await fetch('https://api.github.com/users/hiteshchoudhary')
+    const response = await fetch('https://api.github.com/users/sadat8418')
     return response.json()
 }

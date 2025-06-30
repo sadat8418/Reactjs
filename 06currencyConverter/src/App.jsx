@@ -6,7 +6,7 @@ import useCurrencyInfo from './hooks/useCurrencyInfo'   //custom hooks
 
 function App() {
  // const [count, setCount] = useState(0) 
-  const [amount, setAmount]  = useState(0) //hooks are funtion , count variable, setCount func  reference
+  const [amount, setAmount]  = useState(0) //hooks are function , count variable, setCount func  reference
   const [from, setFrom] = useState("usd") //from
   const [to, setTo] = useState("inr")
   const [convertedAmount, setConvertedAmount] = useState(0)
@@ -15,11 +15,11 @@ function App() {
 const currencyInfo = useCurrencyInfo(from)
 const options = Object.keys(currencyInfo) //sob keys (in object) nilam api theke, usd, inr,bdt 
 
-const swap = ()=>{ //onclick swap method call
+const swap = ()=>{ //onclick swap "method" call
   setFrom(to)
   setTo(from)
-  setConvertedAmount(amount)
-  setAmount(convertedAmount)
+  setConvertedAmount(amount) //inr to usd korbe , dekhte sudor ar ki 
+  setAmount(convertedAmount)  // 
 }
 const convert = () => { //onSubmit button a press
   setConvertedAmount(amount * currencyInfo[to])
@@ -35,7 +35,7 @@ return (
           <div className="w-full max-w-md mx-auto border border-gray-60 rounded-lg p-5 backdrop-blur-sm bg-white/30">
               <form
                   onSubmit={(e) => {
-                      e.preventDefault(); //submit hobe na 
+                      e.preventDefault(); //form submit hobe na. convert hobe
                       convert()
                      
                   }}
