@@ -2,7 +2,7 @@ import {createContext, useContext} from "react"
  
 //createContext , context api .. 
 export const TodoContext = createContext({
-    todos: [
+    todos: [                    //todo থেকে value নিচ্ছি //theme : dark , todo:[ {},{}], properties
         {
             id: 1,              //for every todo , will increment in future .. 
             todo: " Todo msg",
@@ -10,8 +10,10 @@ export const TodoContext = createContext({
         }
     ],
 
-    addTodo: (todo) => {}, //method call,function kisu kaj korbe,  ki korbe? App.jsx jane
+    addTodo: (todo) => {}, //functionalities App.jsx e 
+    
     //onnek boro project er jonno context api na, redux use hoy... (karon eivabe funtion define) 
+   
     updateTodo: (id, todo) => {},  //value todo thekei nibo,
     deleteTodo: (id) => {},
     toggleComplete: (id) => {}

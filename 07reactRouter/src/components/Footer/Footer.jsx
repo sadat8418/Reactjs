@@ -1,5 +1,5 @@
 import React from 'react'
-import { Link } from 'react-router-dom';
+import { Link, NavLink } from 'react-router-dom';
 
 export default function Footer() {
     return (
@@ -20,14 +20,17 @@ export default function Footer() {
                             <h2 className="mb-6 text-sm font-semibold text-gray-900 uppercase">Resources</h2>
                             <ul className="text-gray-500 font-medium">
                                 <li className="mb-4">
-                                    <Link to="/" className="hover:underline">
+                                    <Link to="/" className="hover:underline ">
                                         Home
                                     </Link>
                                 </li>
                                 <li>
-                                    <Link to="/about" className="hover:underline">
+                                    <NavLink to="/about" 
+                                     className={({isActive}) =>
+                                        `hover:underline block py-2 pr-4 pl-3 duration-200 ${isActive ? "text-orange-700" : "text-gray-500 font-medium"} border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 hover:text-orange-700 lg:p-0`}
+                                    >
                                         About
-                                    </Link>
+                                    </NavLink>
                                 </li>
                             </ul>
                         </div>
@@ -36,16 +39,16 @@ export default function Footer() {
                             <ul className="text-gray-500 font-medium">
                                 <li className="mb-4">
                                     <a
-                                        href="https://github.com/hiteshchoudhary"
-                                        className="hover:underline"
+                                        href="https://github.com/sadat8418"
+                                        className="hover:underline text-gray-500 hover:text-blue-500"
                                         target="_blank"
-                                        rel="noreferrer"
+                                        rel="noreferrer" // to omit the Referer header 
                                     >
                                         Github
                                     </a>
                                 </li>
                                 <li>
-                                    <Link to="/" className="hover:underline">
+                                    <Link to="/" className="hover:underline text-gray-500 hover:text-green-500">
                                         Discord
                                     </Link>
                                 </li>
@@ -72,8 +75,8 @@ export default function Footer() {
                 <div className="sm:flex sm:items-center sm:justify-between">
                     <span className="text-sm text-gray-500 sm:text-center">
                         © 2023
-                        <a href="https://hiteshchoudhary.com/" className="hover:underline">
-                            hiteshchoudhary
+                        <a href="https://google.com/" className="hover:underline">
+                           . sadatArefin
                         </a>
                         . All Rights Reserved.
                     </span>

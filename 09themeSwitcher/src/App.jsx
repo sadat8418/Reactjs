@@ -6,7 +6,7 @@ import Card from './components/Card'
 
 function App() {
   const [themeMode, setThemeMode] = useState("light")
-
+    //theme.js is the main file
   //method define kore dao, automatic functionality chole asbe automatically
   const lightTheme = () => {
     setThemeMode("light")
@@ -22,7 +22,7 @@ function App() {
     //light dark ja lekha ace remove kore dao ... html class e dark, light lekha thake 
     document.querySelector('html').classList.remove("light", "dark")
     document.querySelector('html').classList.add(themeMode)
-  }, [themeMode]) //dependency, run korte ki lagbe
+  }, [themeMode]) //dependency, themeMode change hoile abar run hobe 
   
 
   return (

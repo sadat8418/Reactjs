@@ -10,7 +10,10 @@ function App() {
 
   return (
     <>
-    <UserContextProvider>
+    {/* oneke UserContext.Provider লেখে , ফাইল থেকে import না করে 
+    
+    useContext use koro , data fetch koro from UserContext.js .  */}
+    <UserContextProvider>    
     <h1>Hello Sadat </h1>
      <Login/>
      <Profile/>

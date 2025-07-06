@@ -5,9 +5,10 @@ export default function ThemeBtn() {
     //thememode nilam using useTheme 
     const {themeMode, lightTheme, darkTheme} = useTheme()
    
+    //onChange
     const onChangeBtn = (e) => {
         const darkModeStatus = e.currentTarget.checked
-        if (darkModeStatus) {
+        if (darkModeStatus) {  //darkModeStatus true hoile darkTheme
             darkTheme()
         } else {
             lightTheme()
@@ -16,7 +17,7 @@ export default function ThemeBtn() {
     return (
         <label className="relative inline-flex items-center cursor-pointer">
             <input
-                type="checkbox"
+                type="checkbox"  //type checkbox
                 value=""
                 className="sr-only peer"
                 onChange={onChangeBtn}
