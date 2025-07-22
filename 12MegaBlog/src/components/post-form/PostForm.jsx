@@ -18,24 +18,24 @@ export default function PostForm({ post }) {
 
     const navigate = useNavigate();
     const userData = useSelector((state) => state.auth.userData);
-
+//user form sumbit korle data thakbe 
     const submit = async (data) => {
         if (post) {
             const file = data.image[0] ? await appwriteService.uploadFile(data.image[0]) : null;
-
+// upload hoice , puraton delete
             if (file) {
                 appwriteService.deleteFile(post.featuredImage);
             }
-
+//update post
             const dbPost = await appwriteService.updatePost(post.$id, {
                 ...data,
-                featuredImage: file ? file.$id : undefined,
+                featuredImage: file ? file.$id : undefined, // overwrite only image
             });
 
             if (dbPost) {
                 navigate(`/post/${dbPost.$id}`);
             }
-        } else {
+        } else { // improve korle valo , file thakle upload 
             const file = await appwriteService.uploadFile(data.image[0]);
 
             if (file) {
@@ -60,9 +60,9 @@ export default function PostForm({ post }) {
 
         return "";
     }, []);
-
+//important for interview , slugTransform
     React.useEffect(() => {
-        const subscription = watch((value, { name }) => {
+        const subscription = watch((value, { name }) => { //memory management by storing in variable
             if (name === "title") {
                 setValue("slug", slugTransform(value.title), { shouldValidate: true });
             }
@@ -73,6 +73,7 @@ export default function PostForm({ post }) {
 
     return (
         <form onSubmit={handleSubmit(submit)} className="flex flex-wrap">
+           {/* w-2/3 2/3 part ekta form  */}
             <div className="w-2/3 px-2">
                 <Input
                     label="Title :"
